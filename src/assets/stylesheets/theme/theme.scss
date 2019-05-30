@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app__container {
+  display: flex;
+  max-height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+}
+
+.app__main-container {
+  min-height: calc(100vh - 110px);
+  height: auto;
+  margin: 20px;
+  background: $grey;
+  display: flex;
+}
+
+.app__component-container {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+.input-error {
+  border-color: $red !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .app__container {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    height: auto;
+    max-height: unset;
+  }
+
+  .app__main-container {
+    margin: 0px;
+  }
+}

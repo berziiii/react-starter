@@ -1,25 +1,37 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve"
-  },
-  "include": [
-    "src"
-  ]
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es5",
+        "lib": ["esnext", "dom"],
+        "sourceMap": true,
+        "allowJs": false,
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "paths": {
+            "assets/*": ["assets/*"]
+        },
+        "jsx": "preserve",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "types": ["jest", "node"],
+        "typeRoots": ["node_modules/@types", "typings"],
+        "allowUnreachableCode": true,
+        "checkJs": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": false,
+        "pretty": true,
+        "skipLibCheck": true,
+        "traceResolution": false,
+        "noEmit": true,
+        "esModuleInterop": true
+    },
+    "include": ["typings/**/*", "src/**/*"],
+    "exclude": ["build", "config", "node_modules", "public", "scripts"]
 }
